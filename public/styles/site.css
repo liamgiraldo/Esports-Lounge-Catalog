@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Manrope:wght@300&display=swap');
+
+body {
+    margin: 0;
+    background-color: #20282E;
+    color: #e9eaea;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+
+html {
+    margin: 0;
+}
+
+.allcontent {
+    display: flex;
+    flex-direction: column;
+    background-color: #3B4852;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    padding: 20px;
+    background-color: #2E3840;
+    font-family: 'Heebo', sans-serif;
+    box-shadow: 0px 3px 18px -6px rgba(0, 0, 0, 0.75);
+    z-index: 0;
+}
+
+header label {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: larger;
+}
+
+header a {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: larger;
+}
+
+header h1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.collapsefilters {
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    color: black;
+    background-color: #e9eaea;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #b3b3b3;
+    border-width: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.collapsefilters:hover {
+    background-color: #d4d4d4;
+}
+
+.gamesearchbar {
+    display: flex;
+    background-color: #20282E;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1b252c;
+    color: white;
+    font-size: large;
+}
+
+.bodybox {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #20282E;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+.gamebox {
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 0 0 10px #00000060;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #3B4852;
+    font-family: 'Heebo', sans-serif;
+}
+
+nav a {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    text-decoration: none;
+    font-style: normal;
+    border-style: solid;
+    border-width: 1px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    color: #e9eaea;
+}
+
+nav a:visited {
+    color: #e9eaea;
+}
+
+.gamerow {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.gameentry {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+
+.gameentry:hover {
+    background-color: #161e23;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gameentry img {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}
+
+.gameentry .sourcetext {
+    display: flex;
+    margin-top: auto;
+    font-size: small;
+    color: #e9eaea;
+}
+
+.sourcetext a {
+    color: #6BA8D4;
+}
+
+.superheader {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: #6BA8D4;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+}
+
+.esportslounge {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(72, 103, 125);
+    box-shadow: inset 0px 0px 9px 0px rgba(0,0,0,0.32);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.esportslounge p {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.lag288 {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    background-color: rgb(72, 103, 125);
+    box-shadow: inset 0px 0px 9px 0px rgba(0,0,0,0.32);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.gametitle {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.filterbox {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.filterbuttonbox {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.filterbox input {
+    display: flex;
+    margin-left: auto;
+}
+
+.filterbox label {
+    display: flex;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #161e23;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: whitesmoke;
+}
+
+.filters {
+    display: inline;
+    flex-direction: column;
+    position: absolute;
+    background-color: #2E3840;
+    border-style: none;
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: 0px 3px 18px -6px rgba(0, 0, 0, 0.75);
+    z-index: 1;
+    left: auto;
+    right: auto;
+}
+
+.filters p {
+    display: flex;
+    margin: 10px;
+    margin-bottom: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: #3B4852;
+}
+
+.collapsefilters {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.squished {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.contentbox {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #2E3840;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #171c21;
+    border-style: solid;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 0px 3px 18px -6px rgba(0, 0, 0, 0.75);
+    margin-bottom: 50%;
+    margin-top: 50px;
+}
+
+.contentboxsmall {
+    display: flex;
+    flex-direction: column;
+    background-color: #2E3840;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #171c21;
+    border-style: solid;
+    padding: 10px;
+    box-shadow: 0px 3px 18px -6px rgba(0, 0, 0, 0.75);
+    margin: auto;
+    margin-right: 20px;
+}
+
+.contentboxsmall p {
+    display: flex;
+    flex-direction: row;
+}
+
+.contentboxsmall h2 {
+    display: flex;
+    flex-direction: row;
+    max-width: 300px;
+}
+
+.gamerow a {
+    color: #e9eaea;
+    text-decoration: none;
+}
+
+.sourcetext a {
+    color: #6BA8D4;
+    text-decoration: underline;
+}
+
+.tagheader {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 5px;
+    border-style: solid;
+    border-color: #3B4852;
+    margin-bottom: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.tagheader p {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.tag {
+    display: flex;
+    flex-direction: row;
+    margin: 3px;
+    background-color: #20282E;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #6BA8D4;
+    box-shadow: 0px 3px 18px -6px rgba(0, 0, 0, 0.75);
+}
+
+.tag p {
+    margin: 5px;
+}
+
+.listentry {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #d4d4d4;
+    font-style: normal;
+}
+
+.insertform {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #171c21;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.insertform .insertbox {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.submitright {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.loginbox {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    position: absolute;
+    background-color: #2E3840;
+    margin-top: 50px;
+    margin-left: 320px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 18px -6px rgba(0, 0, 0, 0.75);
+}
+
+.loginbox button {
+    display: flex;
+    flex-direction: row;
+    background-color: #161e23;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    color: whitesmoke;
+    border-color: #171c21;
+    padding: 5px;
+    margin-left: auto;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.loginbox button:hover {
+    box-shadow: 0px 3px 18px -6px rgba(0, 0, 0, 0.75);
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.label-input label {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+}
+
+.label-input input {
+    display: flex;
+    flex-direction: row;
+    background-color: #161e23;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: #171c21;
+    color: whitesmoke;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.label-input input:focus {
+    outline: none;
+    box-shadow: 0px 3px 18px -6px rgba(0, 0, 0, 0.75);
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    list-style-type: none;
+    padding: 8px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.login .feedback {
+    list-style-type: none;
+    padding: 0;
+    color: #FAA0A0;
+}
+
+.loginbox p {
+    display: flex;
+    margin: 10px;
+    margin-bottom: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: #3B4852;
+}
+
+.loginbutton {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #e9eaea;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #b3b3b3;
+    color: rgb(24, 24, 24);
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.loginbutton:hover {
+    background-color: #d4d4d4;
+    cursor: pointer;
+}
+
+.backbutton {
+    display: flex;
+    flex-direction: row;
+    border-radius: 3px;
+    color: whitesmoke;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.backbutton:hover {
+    background-color: #161e23;
+}
+
+.submitfilters {
+    display: flex;
+    flex-direction: row;
+    background-color: #161e23;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    color: whitesmoke;
+    border-color: #171c21;
+    padding: 5px;
+    margin: 5px;
+    margin-left: auto;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submitfilters:hover {
+    box-shadow: 0px 3px 18px -6px rgba(0, 0, 0, 0.75);
+}
+
+.sourcetext p {
+    margin: 0;
+}
+
+.st {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.headerwithline {
+    display: flex;
+    border-width: 1px;
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: #3B4852;
+    font-size: large;
+}
+
+.lightbg {
+    background-color: #3B4852;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+
+.sitebutton {
+    display: flex;
+    flex-direction: row;
+    background-color: #161e23;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    color: whitesmoke;
+    border-color: #ffffff;
+    padding: 5px;
+    margin: 5px;
+    margin-left: auto;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sitebutton:hover {
+    color: black;
+    background-color: whitesmoke;
+    box-shadow: 0px 3px 18px -6px rgba(0, 0, 0, 0.75);
+}
+
+.sourcelink:hover {
+    background-color: #3B4852;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
